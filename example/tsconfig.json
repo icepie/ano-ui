@@ -9,8 +9,8 @@
       "vite/client",
       "@dcloudio/types"
     ],
-    "noImplicitAny": false,
     "sourceMap": true,
-    "isolatedModules": true
+    "isolatedModules": true,
+    "noImplicitAny": false
   }
 }

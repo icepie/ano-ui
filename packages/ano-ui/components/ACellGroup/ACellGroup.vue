@@ -11,7 +11,7 @@ provide(cellGroupKey, reactive({
 </script>
 
 <template>
-  <div v-if="title" class="a-text-color-2 p-4">
+  <div v-if="title" class="p-4 a-text-color-2">
     {{ title }}
   </div>
   <div

@@ -28,7 +28,7 @@ const topStyle = computed(() => {
       v-model:show="showValue" :position="position" :duration="300"
       :custom-style="[position === 'top' || position === 'left' || position === 'right' ? topStyle : '']"
     >
-      <div class="flex items-center justify-center text-white h-100px w-200px bg-primary">
+      <div class="h-100px w-200px flex items-center justify-center bg-primary text-white">
         内容
       </div>
     </APopup>

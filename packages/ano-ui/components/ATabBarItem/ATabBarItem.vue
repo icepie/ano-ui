@@ -10,7 +10,7 @@ const { toggle, active } = useTabBarItem(props, emit)
 
 <template>
   <div
-    class="h-full flex items-center justify-center text-sm transition-all text-context a-tab-bar-item flex-col"
+    class="a-tab-bar-item h-full flex flex-col items-center justify-center text-sm text-context transition-all"
     :class="[{ 'a-primary': active }, customClass]" :style="customStyle" @click="toggle"
   >
     <slot name="icon">

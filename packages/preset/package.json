@@ -6,11 +6,6 @@
   "author": "Neil Lee <zguolee@foxmail.com>",
   "license": "MIT",
   "homepage": "https://github.com/ano-ui/ano-ui/tree/main/packages/preset#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ano-ui/ano-ui.git",
-    "directory": "packages/preset"
-  },
   "bugs": "https://github.com/ano-ui/ano-ui/issues",
   "keywords": [
     "unocss",

@@ -32,7 +32,7 @@ function goNavigation(path: string) {
 
 <template>
   <UBasePage :show="false">
-    <div class="text-center p4 pt-12" flex="~ col gap1">
+    <div class="p4 pt-12 text-center" flex="~ col gap1">
       <div class="text-xl">
         Ano UI
       </div>

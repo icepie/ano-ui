@@ -62,10 +62,10 @@ function togglePreview() {
 <template>
   <template v-if="isComponentPage">
     <button
-      class="fixed right-0 xl:w-0 bottom-25 translate-x-40% op-40 cursor-pointer hover:op-100 hover:translate-x-0 transition-all z-9999"
+      class="fixed bottom-25 right-0 z-9999 translate-x-40% cursor-pointer op-40 transition-all xl:w-0 hover:translate-x-0 hover:op-100"
       @click="togglePreview"
     >
-      <div class="text-sm bg-[var(--vp-button-brand-bg)] color-[var(--vp-button-brand-text)] rounded-full p2">
+      <div class="rounded-full bg-[var(--vp-button-brand-bg)] p2 text-sm color-[var(--vp-button-brand-text)]">
         <svg v-if="!show" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
           <path
             fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
@@ -79,11 +79,11 @@ function togglePreview() {
   <Layout class="of-x-hidden" :class="[{ 'xl:[&>.VPContent]:!pr-100': isComponentPage }, show ? 'of-hidden' : '']" />
   <template v-if="isComponentPage">
     <div
-      class="fixed right-0 bottom-0 top-80px flex flex rounded-l-xl xl:w-375px w-0 xl:right-10 xl:transition-all"
+      class="fixed bottom-0 right-0 top-80px w-0 flex flex rounded-l-xl xl:right-10 xl:w-375px xl:transition-all"
       :class="show ? ' w-100vw h-100vh top-0! z-999 left-0' : ''"
     >
       <iframe
-        class="border-none rounded-xl block w-375px h-675px" :src="iframeUrl"
+        class="block h-675px w-375px rounded-xl border-none" :src="iframeUrl"
         :class="show ? 'w-screen! h-screen! rounded-0!' : ''"
       />
     </div>

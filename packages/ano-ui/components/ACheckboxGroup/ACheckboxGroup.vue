@@ -21,7 +21,7 @@ provide(checkboxGroupKey, reactive({
 
 <template>
   <div
-    class="gap-2 flex flex-wrap"
+    class="flex flex-wrap gap-2"
     :class="[direction === 'horizontal' ? '' : 'flex-col', customClass]"
     :style="customStyle"
   >

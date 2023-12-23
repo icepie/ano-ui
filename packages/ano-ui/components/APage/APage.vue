@@ -9,7 +9,7 @@ defineProps({
 </script>
 
 <template>
-  <div class="a-text-color a-bg" :class="[{ dark }, customClass]" :style="customStyle">
+  <div class="a-bg a-text-color" :class="[{ dark }, customClass]" :style="customStyle">
     <slot />
   </div>
 </template>

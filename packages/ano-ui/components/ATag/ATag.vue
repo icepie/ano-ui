@@ -11,7 +11,7 @@ const { classes, clickHandler, closeHandler } = useTag(props, emit)
 <template>
   <div
     v-if="show"
-    class="relative box-border inline-flex items-center justify-center a-transition gap1 overflow-visible after:display-none"
+    class="after:display-none relative box-border inline-flex items-center justify-center gap1 overflow-visible a-transition"
     :class="[classes, customClass]"
     :style="customStyle" @click="clickHandler"
   >

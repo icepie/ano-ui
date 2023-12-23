@@ -17,12 +17,12 @@ const {
 <template>
   <div class="flex items-center space-x-2" :class="[`a-checkbox-${size}`, customClass]" :style="customStyle">
     <div
-      class="box-border relative inline-block border border-[#C8C9CC] rounded-sm border-solid bg-clip-padding a-transition"
+      class="relative box-border inline-block border border-[#C8C9CC] rounded-sm border-solid bg-clip-padding a-transition"
       :class="[`a-checkbox-checkbox-${size}`, checked ? `a-${type} a-${variant}` : '', { 'op-50': disabled }]"
       @click="iconClickHandler"
     >
       <div
-        class="flex items-center justify-center absolute inset-0 animate-duration-200"
+        class="absolute inset-0 flex animate-duration-200 items-center justify-center"
         :class="[checked ? 'animate-zoom-in text-white' : 'animate-zoom-out text-transparent']"
       >
         <slot name="icon" :checked="checked">

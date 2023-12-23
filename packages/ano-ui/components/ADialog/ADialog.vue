@@ -15,14 +15,14 @@ defineExpose({ showDialog })
 <template>
   <APopup v-model:show="showValue" position="center" :custom-class="['rounded-xl min-w-80% text-center', customClass]" :custom-style="customStyle">
     <div class="p-6">
-      <div v-if="dialogStatus?.title" class="text-xl pb2">
+      <div v-if="dialogStatus?.title" class="pb2 text-xl">
         {{ dialogStatus.title }}
       </div>
       <div v-if="dialogStatus?.message" class="text-darkText">
         {{ dialogStatus.message }}
       </div>
     </div>
-    <div class="items-center justify-center flex border-t border-t-gray-400/25 border-t-solid">
+    <div class="flex items-center justify-center border-t border-t-gray-400/25 border-t-solid">
       <template v-if="dialogStatus?.showCancelButton">
         <AButton class="flex-1" type="danger" variant="text" square block @click.stop="onCancel">
           {{ dialogStatus.cancelButtonText || 'Cancel' }}

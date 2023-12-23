@@ -8,7 +8,7 @@
     </div>
     <div items-center px-4 flex="~ gap6 wrap">
       <ABadge type="primary" :value="16" :max="15">
-        <div class="rounded-lg h-12 w-12 bg-gray3" />
+        <div class="h-12 w-12 rounded-lg bg-gray3" />
       </ABadge>
       <ABadge type="primary" dot>
         <div class="h-12 w-12 rounded-lg bg-gray3" />

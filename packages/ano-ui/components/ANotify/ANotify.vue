@@ -28,7 +28,7 @@ const animationName = {
     :custom-class="['fixed z-500', classes]"
   >
     <div
-      class="box-border flex items-center justify-center gap-2 min-h-10 px-3 text-base a-solid"
+      class="box-border min-h-10 flex items-center justify-center gap-2 a-solid px-3 text-base"
       :class="[`a-${state.type}`, state.position === 'default' ? 'rounded-none' : 'rounded-lg', { 'justify-start': state.showIcon }, customClass]"
       :style="customStyle"
     >

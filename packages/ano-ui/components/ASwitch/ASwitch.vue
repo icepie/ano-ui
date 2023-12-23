@@ -10,12 +10,12 @@ const { disabled, checked, dotTranslateClasses, toggle } = useSwitch(props, emit
 
 <template>
   <div
-    class="relative rounded-full bg-context transition-all duration-200 inline-block text-white dark:bg-op80 dark:text-op80"
+    class="relative inline-block rounded-full bg-context text-white transition-all duration-200 dark:bg-op80 dark:text-op80"
     :class="[`a-switch-${size}`, `a-text-${size}`, checked ? `a-${type}` : 'a-gray3', { 'op-50': disabled }, customClass]"
     :style="customStyle" @click="toggle"
   >
     <div
-      class="absolute rounded-full transition-all duration-200 bg-white text-context top-0.5"
+      class="absolute top-0.5 rounded-full bg-white text-context transition-all duration-200"
       :class="[`a-switch-dot-${size}`, checked ? dotTranslateClasses : 'left-0.5']"
     >
       <template v-if="checked">
@@ -34,7 +34,7 @@ const { disabled, checked, dotTranslateClasses, toggle } = useSwitch(props, emit
 
     <template v-if="checked">
       <div
-        class="absolute top-0.5 flex animate-zoom-in animate-duration-200 items-center justify-center transition-all duration-200 left-0.5 right-auto !leading-none"
+        class="absolute left-0.5 right-auto top-0.5 flex animate-zoom-in animate-duration-200 items-center justify-center transition-all duration-200 !leading-none"
         :class="[`a-switch-dot-${size}`]"
       >
         <template v-if="activeLabel">
@@ -45,7 +45,7 @@ const { disabled, checked, dotTranslateClasses, toggle } = useSwitch(props, emit
     </template>
     <template v-else>
       <div
-        class="absolute top-0.5 flex animate-zoom-in animate-duration-200 items-center justify-center transition-all duration-200 !leading-none right-0.5"
+        class="absolute right-0.5 top-0.5 flex animate-zoom-in animate-duration-200 items-center justify-center transition-all duration-200 !leading-none"
         :class="[`a-switch-dot-${size}`]"
       >
         <template v-if="inactiveLabel">

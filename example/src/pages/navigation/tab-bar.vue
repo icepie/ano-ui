@@ -29,10 +29,10 @@ const active = ref('home')
         </template>
       </ATabBarItem>
       <ATabBarItem name="discovery">
-        <div class="text-lg i-tabler-compass" />
+        <div class="i-tabler-compass text-lg" />
       </ATabBarItem>
       <ATabBarItem name="mine">
-        <div class="text-lg i-tabler-user" />
+        <div class="i-tabler-user text-lg" />
       </ATabBarItem>
     </ATabBar>
     <div mt-2 />

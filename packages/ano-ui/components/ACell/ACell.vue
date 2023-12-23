@@ -10,7 +10,7 @@ const { arrow, classes, clickHandler } = useCell(props, emit)
 
 <template>
   <div
-    class="box-border items-center overflow-hidden flex px-4 gap-2 relative a-cell py-3 text-base after:absolute after:left-4 after:right-4 after:top-0 after:scale-y-50% after:border-t after:a-border after:border-t-solid a-bg-2 a-text-color"
+    class="a-cell relative box-border flex items-center gap-2 overflow-hidden px-4 py-3 text-base after:absolute after:left-4 after:right-4 after:top-0 after:scale-y-50% after:border-t after:a-border after:border-t-solid a-bg-2 a-text-color"
     :class="[classes, { 'text-gray3': disabled }, customClass]" :hover-class="(arrow && !disabled) ? '!a-active' : ''" :style="customStyle"
     @click="clickHandler"
   >
@@ -44,7 +44,7 @@ const { arrow, classes, clickHandler } = useCell(props, emit)
       </div>
       <slot name="right-icon">
         <div
-          v-if="arrow" class="a-text-color-2 i-tabler-chevron-right transform transition-300"
+          v-if="arrow" class="i-tabler-chevron-right transform transition-300 a-text-color-2"
           :class="[arrow === 'bottom' && 'rotate-90']"
         />
       </slot>

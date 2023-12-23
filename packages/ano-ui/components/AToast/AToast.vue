@@ -20,9 +20,9 @@ defineExpose({ show, close })
   >
     <slot name="icon">
       <div v-if="state?.type === 'success'" class="i-tabler-circle-check-filled mr-2" />
-      <div v-else-if="state?.type === 'warning'" class="mr-2 i-tabler-alert-circle-filled" />
-      <div v-else-if="state?.type === 'danger'" class="mr-2 i-tabler-circle-x-filled" />
-      <div v-else-if="state?.type === 'loading'" class="i-tabler-loader mr-2 animate-spin mr-1" />
+      <div v-else-if="state?.type === 'warning'" class="i-tabler-alert-circle-filled mr-2" />
+      <div v-else-if="state?.type === 'danger'" class="i-tabler-circle-x-filled mr-2" />
+      <div v-else-if="state?.type === 'loading'" class="i-tabler-loader mr-1 mr-2 animate-spin" />
     </slot>
     <template v-if="state?.message">
       {{ state.message }}

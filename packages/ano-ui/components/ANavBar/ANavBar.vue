@@ -33,7 +33,7 @@ const {
         <div v-if="hasLeft" class="a-nav-bar-left" :class="clickableClassName" :hover-class="clickable ? 'a-nav-bar-clickable-hover' : ''" @click="clickLeftHandler">
           <slot v-if="$slots.left" name="left" />
           <template v-else>
-            <div v-if="leftArrow" class="mr-1 a-nav-bar-icon i-tabler-chevron-left" />
+            <div v-if="leftArrow" class="a-nav-bar-icon i-tabler-chevron-left mr-1" />
             <span v-if="leftText" class="a-nav-bar-text">{{ leftText }}</span>
           </template>
         </div>
@@ -84,6 +84,26 @@ const {
 
 .a-nav-bar-title {
   --at-apply: 'line-clamp-1 m-auto max-w-60% text-base text-lg font-bold a-bg-2'
+
+  @screen md {
+    --at-apply: 'line-clamp-1 m-auto max-w-60% text-base text-sm font-bold a-bg-2'
+  }
+
+  @screen lg {
+    --at-apply: 'line-clamp-1 m-auto max-w-60% text-base text-xl  font-bold a-bg-2'
+  }
+
+  @screen xl {
+    --at-apply: 'line-clamp-1 m-auto max-w-60% text-base text-sm  font-bold a-bg-2'
+  }
+
+  @screen 2xl {
+    --at-apply: 'line-clamp-1 m-auto max-w-60% text-base text-xs  font-bold a-bg-2'
+  }
+
+  @screen lt-xs {
+    --at-apply: 'line-clamp-1 m-auto max-w-60% text-base text-xs  font-bold a-bg-2'
+  }
 }
 
 .a-nav-bar-right {
